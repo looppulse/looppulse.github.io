@@ -76,7 +76,3 @@ if ($("main.index").size() > 0) {
     notify("Thanks for the message. Our team will get back to you shortly.", "success");
   }
 }
-
-$('.navbar-collapse').on('show.bs.collapse', function() {
-  return $(this).addClass('collapse-visible');
-});

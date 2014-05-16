@@ -88,7 +88,7 @@
                 <label for="companyType" class="col-sm-4 control-label">Company Type</label>
                 <div class="col-sm-8">
                   <select class="form-control" id="companyType"  name="companyType" title="Select a company type">
-                      <option value="">Select a company type from below</option>
+                      <option value="">Select a company type:</option>
                       <option value="Retail Shops">Retail Shops</option>
                       <option value="Shopping Malls">Shopping Malls</option>
                       <option value="Restaurants">Restaurants</option>
@@ -103,7 +103,7 @@
                 <label for="region" class="col-sm-4 control-label">Region</label>
                 <div class="col-sm-8">
                   <select class="form-control" id="region"  name="region" title="Select a region">
-                    <option value="">Select a region from below</option>
+                    <option value="">Select a region:</option>
                     <option value="Asia">Asia</option>
                     <option value="North America">North America</option>
                     <option value="South America">South America</option>
@@ -200,7 +200,29 @@
 
     <script src="scripts/vendor.js"></script>
 
+
     <script src="scripts/plugins.js"></script>
+
+
+    <script type="text/javascript">
+    (function(){
+      update_size = function(){
+        $("header .navbar-toggle:visible").each(function(){
+            $("header .navbar-collapse").addClass('collapse-visible')
+        })
+        $("header .navbar-toggle:hidden").each(function(){
+            $("header .navbar-collapse").removeClass('collapse-visible')
+        })
+      };
+
+      update_size();
+      $(window).resize(function(){
+        update_size()
+      })
+
+    })();
+    </script>
+
     <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
 
     <script src="scripts/main.js"></script>

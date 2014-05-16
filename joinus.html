@@ -176,7 +176,29 @@
 
     <script src="scripts/vendor.js"></script>
 
+
     <script src="scripts/plugins.js"></script>
+
+
+    <script type="text/javascript">
+    (function(){
+      update_size = function(){
+        $("header .navbar-toggle:visible").each(function(){
+            $("header .navbar-collapse").addClass('collapse-visible')
+        })
+        $("header .navbar-toggle:hidden").each(function(){
+            $("header .navbar-collapse").removeClass('collapse-visible')
+        })
+      };
+
+      update_size();
+      $(window).resize(function(){
+        update_size()
+      })
+
+    })();
+    </script>
+
     <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
 
     <script src="scripts/main.js"></script>

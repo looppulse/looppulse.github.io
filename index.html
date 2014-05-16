@@ -115,7 +115,7 @@
                 <p>
                   Our multi-platform dashboard shows you the <i>pulse</i> of your business and allows all of your stake holders to capture and optimize the retail experience anywhere anytime.
                 </p>
-                <p class="call-for-action demo"><span class="demo-call">Request a demo now</span> <a class="btn btn-primary get-demo btn-lg">Get In Touch</a></p>
+                <p class="call-for-action demo"><span class="demo-call">Request a demo now</span> <a class="btn btn-primary get-demo btn-lg"  href="contact.html">Get In Touch</a></p>
             </article>
 
             <div class="concept-art col-sm-6">
@@ -152,7 +152,7 @@
         </section>
 
         <section class="" id="get-in-touch">
-          <div class="call-for-action"><span class="action-statement">Turn your in-store visitors into loyal customers now.</span> <span class="action-button"><a class="btn btn-primary get-in-touch btn-lg">Get In Touch</a></span></div>
+          <div class="call-for-action"><span class="action-statement">Turn your in-store visitors into loyal customers now.</span> <span class="action-button"><a class="btn btn-primary get-in-touch btn-lg"  href="contact.html">Get In Touch</a></span></div>
         </section>
       </main>
 
@@ -211,7 +211,29 @@
 
     <script src="scripts/vendor.js"></script>
 
+
     <script src="scripts/plugins.js"></script>
+
+
+    <script type="text/javascript">
+    (function(){
+      update_size = function(){
+        $("header .navbar-toggle:visible").each(function(){
+            $("header .navbar-collapse").addClass('collapse-visible')
+        })
+        $("header .navbar-toggle:hidden").each(function(){
+            $("header .navbar-collapse").removeClass('collapse-visible')
+        })
+      };
+
+      update_size();
+      $(window).resize(function(){
+        update_size()
+      })
+
+    })();
+    </script>
+
     <script src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
 
     <script src="scripts/main.js"></script>
