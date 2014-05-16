@@ -73,7 +73,7 @@ if ($("main.index").size() > 0) {
   queryString = queryString.substring(1);
   params = parseQueryString(queryString);
   if ((params != null ? params.contact_form_submit : void 0) === "SUCCESS") {
-    notify("Contact form sent", "success");
+    notify("Thanks for the message. Our team will get back to you shortly.", "success");
   }
 }
 
