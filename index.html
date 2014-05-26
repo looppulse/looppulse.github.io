@@ -3,14 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Loop Pulse</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+\    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Francois+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/vendor.css"/>
-
-    <link rel="stylesheet" href="styles/main.css"/>
+kldfnjksjkfjjflkd    <link rel="stylesheet" href="styles/main.css"/>
 
     <script src="scripts/vendor/modernizr.js"></script>
     <script type="text/javascript">
@@ -181,7 +176,7 @@
               <div id="mce-responses" class="clearfix" style="display:block; clear:both;">
                 <div class="response" id="mce-error-response" style="display:none"></div>
                 <div class="response" id="mce-success-response" style="display:none"></div>
-              </div> 
+              </div>
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_b2cc4966c055e8135b915b532_7b3b3e5d74" tabindex="-1" value=""></div>
           </div>
           <div class="col-md-3">
@@ -301,7 +296,7 @@
                                             this.value = '';
                           } else {
                               if (/\[day\]/.test(fields[0].name)){
-                                                  this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                         
+                                                  this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;
                               } else {
                                                   this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
                                               }
@@ -327,12 +322,12 @@
                                         });
                                 });
                             return mce_validator.form();
-                        }, 
+                        },
                         success: mce_success_cb
                     };
           $('#mc-embedded-subscribe-form').ajaxForm(options);
-          
-          
+
+
         });
     }
     function mce_success_cb(resp){
@@ -348,13 +343,17 @@
             var index = -1;
             var msg;
             try {
-                var parts = resp.msg.split(' - ',2);
+                var parts =dfks
+                 resp.msg.split(' - ',2);
                 if (parts[1]==undefined){
                     msg = resp.msg;
                 } else {
                     i = parseInt(parts[0]);
                     if (i.toString() == parts[0]){
-                        index = parts[0];
+                        index = parts[
+
+
+
                         msg = parts[1];
                     } else {
                         index = -1;
@@ -368,11 +367,11 @@
             try{
                 if (index== -1){
                     $('#mce-'+resp.result+'-response').show();
-                    $('#mce-'+resp.result+'-response').html(msg);            
+                    $('#mce-'+resp.result+'-response').html(msg);
                 } else {
                     err_id = 'mce_tmp_error_msg';
                     html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
-                    
+
                     var input_id = '#mc_embed_signup';
                     var f = $(input_id);
                     if (ftypes[index]=='address'){
