@@ -6324,7 +6324,7 @@ button.close {
   visibility: hidden;
 }
 
-.text-hide, header .site-name {
+.text-hide {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -6773,10 +6773,23 @@ header .site-name {
   -webkit-background-size: contain;
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 278px;
+  max-width: 300px;
   width: 60%;
   height: auto;
-  margin: 7px 0 0 7px;
+  margin: 10px 0 7px 10px;
+}
+header .site-name .navbar-brand {
+  font-family: sans-serif;
+  color: #134848;
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 2;
+  padding-left: 120px;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+}
+header .site-name a .logo-text {
+  color: #017f7f;
 }
 
 #site-nav {
@@ -6905,7 +6918,7 @@ section.alt {
 }
 
 #landing {
-  background: #b5e6e6 url(../images/landing_bg.png) top left no-repeat;
+  background: #134848 url(../images/landing_bg.png) top left no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   color: white;
@@ -6966,16 +6979,17 @@ section.alt {
 #concept-flow .concept-list .collect {
   top: 0;
   text-align: center;
+  text-indent: 0.3em;
 }
 #concept-flow .concept-list .engage {
   bottom: 0em;
-  left: 1.5em;
+  left: 1.7em;
   text-align: left;
 }
 #concept-flow .concept-list .analyze {
   bottom: 0em;
   left: 0;
-  margin-left: -1.5em;
+  margin-left: -1.3em;
   text-align: right;
 }
 #concept-flow .art {
@@ -7055,11 +7069,11 @@ section.alt {
   }
   #concept-flow .concept-list .engage {
     bottom: 0.4em;
-    left: 3em;
+    left: 2.8em;
   }
   #concept-flow .concept-list .analyze {
     bottom: 0.4em;
-    margin-left: -2.8em;
+    margin-left: -2.4em;
   }
 
   #slogan .headline {
@@ -7260,6 +7274,11 @@ section.alt {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 640px) {
+  #landing {
+    background-image: none;
+  }
+}
 .about-us.page {
   font-size: 22px;
 }
@@ -7382,9 +7401,9 @@ section.alt {
   }
 
   header .site-name {
-    width: 278px;
+    width: 280px;
     height: 85px;
-    margin: 7px 0 7px 20px;
+    margin-left: 0;
   }
 
   .page {
@@ -7396,6 +7415,10 @@ section.alt {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  header .site-name {
+    margin-left: 20px;
+  }
+
   footer form.subscription-form {
     margin-bottom: 0;
   }
@@ -7440,5 +7463,16 @@ section.alt {
   }
   footer .connect-us {
     margin-left: 60px;
+  }
+}
+@media (max-width: 767px) {
+  header .site-name {
+    margin-left: 15px;
+  }
+  header .site-name .navbar-brand {
+    font-size: 20px;
+    line-height: normal;
+    padding-left: 63px;
+    letter-spacing: 0.25em;
   }
 }
