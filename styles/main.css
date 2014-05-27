@@ -6697,7 +6697,7 @@ header .navbar-header {
 .navbar .navbar-toggle {
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 14px;
+  margin-top: 19px;
   margin-bottom: 8px;
   border: none;
   border-radius: 0;
@@ -6769,6 +6769,7 @@ header {
 }
 header .site-name {
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
   background: url("../images/logo.png") left center no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
@@ -6776,7 +6777,7 @@ header .site-name {
   max-width: 300px;
   width: 60%;
   height: auto;
-  margin: 10px 0 7px 10px;
+  margin: 10px 0 5px 10px;
 }
 header .site-name .navbar-brand {
   font-family: sans-serif;
@@ -6981,16 +6982,15 @@ section.alt {
   text-align: center;
   text-indent: 0.3em;
 }
-#concept-flow .concept-list .engage {
+#concept-flow .concept-list .engage, #concept-flow .concept-list .analyze {
   bottom: 0em;
-  left: 1.7em;
-  text-align: left;
+  text-align: center;
+}
+#concept-flow .concept-list .engage {
+  right: 26%;
 }
 #concept-flow .concept-list .analyze {
-  bottom: 0em;
-  left: 0;
-  margin-left: -1.3em;
-  text-align: right;
+  left: 27%;
 }
 #concept-flow .art {
   margin-top: 0.9em;
@@ -7067,13 +7067,9 @@ section.alt {
   #concept-flow .concept-list li {
     font-size: 1em;
   }
-  #concept-flow .concept-list .engage {
-    bottom: 0.4em;
-    left: 2.8em;
-  }
+  #concept-flow .concept-list .engage,
   #concept-flow .concept-list .analyze {
     bottom: 0.4em;
-    margin-left: -2.4em;
   }
 
   #slogan .headline {
@@ -7438,6 +7434,11 @@ section.alt {
     width: 1024px;
   }
 }
+@media (min-width: 1200px) {
+  #site-nav .nav {
+    margin-right: 1.5em;
+  }
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1280px) {
   .container {
@@ -7474,5 +7475,10 @@ section.alt {
     line-height: normal;
     padding-left: 63px;
     letter-spacing: 0.25em;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  #site-nav .nav {
+    margin-right: 0em;
   }
 }
