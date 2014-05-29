@@ -7476,6 +7476,11 @@ section.alt {
     padding-left: 63px;
     letter-spacing: 0.25em;
   }
+
+  #site-nav .nav .get-in-touch {
+    background-color: transparent;
+    color: #007f7f;
+  }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   #site-nav .nav {
