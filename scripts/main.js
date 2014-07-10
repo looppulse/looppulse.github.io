@@ -33,6 +33,7 @@ if ($(".contact.page").size() > 0) {
       obj[entry["name"]] = entry["value"];
     }
     obj["name"] = obj["firstName"] + " " + obj["lastName"];
+    obj["timestamp"] = (new Date()).getTime();
     payload = JSON.stringify(obj);
     $.ajax({
       url: 'https://looppulse-contact.firebaseio.com/.json',
